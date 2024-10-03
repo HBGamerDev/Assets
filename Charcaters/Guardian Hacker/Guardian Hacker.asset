@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43cf57712d286e6408a4406c45c2f8f8, type: 3}
+  m_Name: Guardian Hacker
+  m_EditorClassIdentifier: 
+  name: Guardian Hacker
+  render: {fileID: 21300000, guid: 43d5e2a0c08a65f45af6df4ff254dbdd, type: 3}
+  rig: {fileID: 220112092777329438, guid: 8927393f92033764f8b08335f5e783aa, type: 3}
+  alt: 0
+  selected: 0
+  stock: {fileID: 9135370485727021023, guid: a26f355dbb7d6c742b81424792caa287, type: 3}

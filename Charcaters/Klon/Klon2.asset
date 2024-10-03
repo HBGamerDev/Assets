@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43cf57712d286e6408a4406c45c2f8f8, type: 3}
+  m_Name: Klon2
+  m_EditorClassIdentifier: 
+  name: Klon
+  render: {fileID: 21300000, guid: d012339824a979741b75c851f517c2ae, type: 3}
+  rig: {fileID: 3788805348744697598, guid: 5f4175f6dddc09a41b4c824d65769c5a, type: 3}
+  alt: 1
+  selected: 0
+  stock: {fileID: -2474149036805555901, guid: 780fb2bf27b5a714bb3a65358dbd32da, type: 3}

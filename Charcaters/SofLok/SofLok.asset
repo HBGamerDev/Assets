@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43cf57712d286e6408a4406c45c2f8f8, type: 3}
+  m_Name: SofLok
+  m_EditorClassIdentifier: 
+  name: SofLok
+  render: {fileID: 21300000, guid: 8b1bb5bc7c39ab04e824c38a7bedf5bb, type: 3}
+  rig: {fileID: 6244644741225365687, guid: 35e0abf276cfc0c4694e765afe803090, type: 3}
+  alt: 0
+  selected: 0
+  stock: {fileID: -5449519371877121697, guid: 0b2933fa41702154da49d384831e62ed, type: 3}

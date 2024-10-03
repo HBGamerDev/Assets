@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5db9e9d4f47b94444a72cfb6234a39c4, type: 3}
+  m_Name: Siege Tower
+  m_EditorClassIdentifier: 
+  name: Siege Tower
+  stage: {fileID: 21300000, guid: d70143bf392fe2f47953c5b81771125c, type: 3}

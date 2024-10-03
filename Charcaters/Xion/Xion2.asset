@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43cf57712d286e6408a4406c45c2f8f8, type: 3}
+  m_Name: Xion2
+  m_EditorClassIdentifier: 
+  name: Xion
+  render: {fileID: 21300000, guid: d12e2d931587a01468c202cd1024879a, type: 3}
+  rig: {fileID: 4076830734402630866, guid: 232bf8f1cafef6c4cbffa725dbaa2063, type: 3}
+  alt: 1
+  selected: 0
+  stock: {fileID: -4030880112089176760, guid: 1d21243bc5c79354b9e9ced65d5c2839, type: 3}

@@ -1,0 +1,254 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5773982963762498799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5773982963762498796}
+  - component: {fileID: 5773982963762498797}
+  - component: {fileID: 5342230644715484577}
+  - component: {fileID: 4849516664291662408}
+  m_Layer: 0
+  m_Name: P2 cursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5773982963762498796
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5773982963762498799}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3, y: 1.5}
+  m_SizeDelta: {x: 4.95, y: 6.19}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!212 &5773982963762498797
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5773982963762498799}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: ecfccf12c2b57194a8e95cb323248ed3, type: 3}
+  m_Color: {r: 0, g: 0, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &5342230644715484577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5773982963762498799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 936feee92086106488a7ce99151ae64a, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: afe3395c-39c4-4c2f-81ad-0b0e7d3d15c3
+    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Nintendo
+      Wireless Gamepad/stick/up,/Nintendo Wireless Gamepad/stick/down,/Nintendo Wireless
+      Gamepad/stick/left,/Nintendo Wireless Gamepad/stick/right,/Nintendo Wireless
+      Gamepad/stick/up,/Nintendo Wireless Gamepad/stick/down,/Nintendo Wireless Gamepad/stick/left,/Nintendo
+      Wireless Gamepad/stick/right]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: de933ce3-ac9a-4c86-80c9-a7b610fbef71
+    m_ActionName: Player/Jump[/Keyboard/w,/Nintendo Wireless Gamepad/button3,/Nintendo
+      Wireless Gamepad/button4]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: afe393fb-9248-4bce-bf3b-82a989d0bd43
+    m_ActionName: Player/Attack[/Keyboard/p,/Nintendo Wireless Gamepad/button2]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 355ebdbc-c6a5-420b-9a6b-cbde8aebf01c
+    m_ActionName: Player/Pause[/Keyboard/space,/Nintendo Wireless Gamepad/button10]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4849516664291662408}
+        m_TargetAssemblyTypeName: PlayerCursor, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0bb2149e-fe76-4c0f-8e25-9a3ed14183e9
+    m_ActionName: Cursor/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Nintendo
+      Wireless Gamepad/stick/up,/Nintendo Wireless Gamepad/stick/down,/Nintendo Wireless
+      Gamepad/stick/left,/Nintendo Wireless Gamepad/stick/right,/Nintendo Wireless
+      Gamepad/stick/up,/Nintendo Wireless Gamepad/stick/down,/Nintendo Wireless Gamepad/stick/left,/Nintendo
+      Wireless Gamepad/stick/right]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4849516664291662408}
+        m_TargetAssemblyTypeName: PlayerCursor, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ff417054-27bd-4466-a1a2-c7a10f20c86d
+    m_ActionName: Cursor/Submit[/Keyboard/p,/Nintendo Wireless Gamepad/button2]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b49d1ed9-20e3-41e5-91ab-3ddfa5903a74
+    m_ActionName: Player/Flick[/SwitchProControllerHID/buttonEast,/DualShock4GamepadHID/buttonEast,/SwitchProControllerHID/rightStick/left,/DualShock4GamepadHID/rightStick/left,/SwitchProControllerHID/rightStick/right,/DualShock4GamepadHID/rightStick/right]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4e591840-89de-44eb-8d4e-1b8e3b8570bd
+    m_ActionName: Player/Upick[/SwitchProControllerHID/rightStick/y,/DualShock4GamepadHID/rightStick/y,/SwitchProControllerHID/rightStick/up,/DualShock4GamepadHID/rightStick/up]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b3ca2308-feb7-4acc-8867-eb6201196b14
+    m_ActionName: Player/Dlick
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4849516664291662408}
+        m_TargetAssemblyTypeName: PlayerCursor, Assembly-CSharp
+        m_MethodName: Skin
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 9c718d02-34e7-430e-a281-dfa80ed0395b
+    m_ActionName: Cursor/Skin[/Keyboard/e,/Nintendo Wireless Gamepad/button3,/SwitchProControllerHID/buttonNorth,/DualShock4GamepadHID/buttonNorth]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4849516664291662408}
+        m_TargetAssemblyTypeName: PlayerCursor, Assembly-CSharp
+        m_MethodName: Cancel
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 46cc4ebe-6abd-4c27-9a54-75d2707edf61
+    m_ActionName: Cursor/New action
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 96303b7e-e414-4b53-966d-0eb373d767ef
+    m_ActionName: Player/Special[/Keyboard/o]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 52016ffe-62ea-4703-933a-29786bbf20ac
+    m_ActionName: Player/Block[/Keyboard/i]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9c880b2e-28fd-4b07-8141-e490a399efd1
+    m_ActionName: Player/Grab[/Keyboard/u]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5d248b2c-d694-43c7-9c67-242106dcad44
+    m_ActionName: Player/Taunt[/Keyboard/e]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Cursor
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &4849516664291662408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5773982963762498799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db146c1745e2404fb293cb6e48632ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: 2
+  speed: 5
+  input: {fileID: 5342230644715484577}
+  selecter: {fileID: 0}

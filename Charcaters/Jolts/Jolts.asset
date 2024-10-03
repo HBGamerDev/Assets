@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43cf57712d286e6408a4406c45c2f8f8, type: 3}
+  m_Name: Jolts
+  m_EditorClassIdentifier: 
+  name: Jolts
+  render: {fileID: 21300000, guid: 961cbf05d23ee5d4a9ed996b5c4c0f40, type: 3}
+  rig: {fileID: 5171343440432354451, guid: 1701b135ca81db340b65f1052007ab4a, type: 3}
+  alt: 0
+  selected: 0
+  stock: {fileID: -311824668453697952, guid: f60d30bf65cd3bf418be63cde3a42e0e, type: 3}
