@@ -33012,8 +33012,8 @@ MonoBehaviour:
   - {fileID: 3238655427742119452}
   - {fileID: 3238655427654215364}
   m_Bounds:
-    m_Center: {x: 0.08822116, y: 0.06692138, z: 0}
-    m_Extent: {x: 0.28181207, y: 0.52507806, z: 0}
+    m_Center: {x: 0.24394706, y: 0.06008333, z: 0}
+    m_Extent: {x: 0.32745048, y: 0.5044341, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!95 &3238655428127324677
@@ -33588,9 +33588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clip:
   - {fileID: 8300000, guid: 4e8b8d00959b4674da4cbc15ce66f07a, type: 3}
-  clip2: []
   audioSource: {fileID: 8752835660749058719}
-  voice: []
 --- !u!251 &4962476629810669417
 PlatformEffector2D:
   m_ObjectHideFlags: 0

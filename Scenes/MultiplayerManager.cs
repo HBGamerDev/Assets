@@ -29,6 +29,16 @@ public class MultiplayerManager : MonoBehaviour
         Instance = this;
         player.prefab = players[playernum];
         playernum = 0;
+
+        if (GameManager.versus == false || GameManager.tourney == true)
+        {
+            add.gameObject.SetActive(false);
+
+            if (GameManager.tourneyPlayers == 6)
+            {
+                add.Add();
+            }
+        }
     }
 
     void Update()
@@ -45,15 +55,7 @@ public class MultiplayerManager : MonoBehaviour
                 transform.GetChild(1).gameObject.SetActive(false);
             }
         }
-        if (GameManager.versus == false || GameManager.tourney == true)
-        {
-            add.gameObject.SetActive(false);
 
-            if (GameManager.tourneyPlayers == 6)
-            {
-                add.Add();
-            }
-        }
 
         player.prefab = players[playernum];
         devices[playernum] = players[playernum].GetComponent<PlayerCursor>().input.devices[0];

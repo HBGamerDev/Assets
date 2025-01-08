@@ -4697,15 +4697,22 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 0.125
+    functionName: Aura
+    data: E
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.125
     functionName: ChargeProjectile
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 1
     messageOptions: 0
-  - time: 0.125
-    functionName: Aura
-    data: E
+  - time: 0.16666667
+    functionName: Voice
+    data: Special1
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
@@ -4724,6 +4731,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 2
     messageOptions: 0
+  - time: 0.5416667
+    functionName: Voice
+    data: Special2
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.75
     functionName: ChargeProjectile
     data: 
@@ -4739,13 +4753,27 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 1
-    functionName: ChargeProjectile
-    data: 
+    functionName: Aura
+    data: O
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
-    intParameter: 3
+    intParameter: 0
     messageOptions: 0
   - time: 1
+    functionName: ChargeProjectile
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 3
+    messageOptions: 0
+  - time: 1.9583334
+    functionName: Voice
+    data: Special3
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2
     functionName: Aura
     data: O
     objectReferenceParameter: {fileID: 0}
@@ -4758,11 +4786,4 @@ AnimationClip:
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 3
-    messageOptions: 0
-  - time: 2
-    functionName: Aura
-    data: O
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
     messageOptions: 0

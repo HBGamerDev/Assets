@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sub Gamer
   render: {fileID: 21300000, guid: c546d6200f0e0f644b4e567d94e447b9, type: 3}
-  rig: {fileID: 1510775180050101379, guid: 47f2da9c9621464428cb95d27abce9a2, type: 3}
+  rig: {fileID: 7467075114337831682, guid: 47f2da9c9621464428cb95d27abce9a2, type: 3}
   alt: 1
   selected: 0
   stock: {fileID: 4102135347307115171, guid: b99d2cca8db80ce4c9e3fcdd56e0b2ce, type: 3}

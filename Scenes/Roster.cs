@@ -44,8 +44,8 @@ public class Roster : MonoBehaviour
         if (GameManager.versus == true && GameManager.tourney == false)
         {
             RuleSet.SetActive(true);
+            add = psc.GetComponent<MultiplayerManager>().add;
         }
-        add = psc.GetComponent<MultiplayerManager>().add;
     }
 
     private void SpawnCharacterCell(Character character)

@@ -144,10 +144,10 @@ public class HurtBox : MonoBehaviour
 
     public void Paralyze(int damage, float kb, float kbx, float kby, Vector2 angle, Transform t)
     {
-        anim.Play("Paralyze");
         anim.speed = kb;
 
         player.damage += damage;
+        anim.Play("Paralyze");
 
         if (FindObjectOfType<ComboCounter>() != null)
         {

@@ -8,6 +8,11 @@ public class ViewStats : MonoBehaviour
 
     public void Open()
     {
+        foreach(Transform other in list.transform.parent)
+        {
+            other.gameObject.SetActive(false);
+        }
+
         list.SetActive(true);
     }
 }

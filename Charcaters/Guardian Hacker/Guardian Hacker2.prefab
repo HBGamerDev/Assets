@@ -10050,7 +10050,7 @@ MonoBehaviour:
   clip:
   - {fileID: 8300000, guid: 013ad3977f53b524b84885404a45ebea, type: 3}
   hit:
-  - {fileID: 8300000, guid: 3612c4fcba000bd4388c6ae952e04b1b, type: 3}
+  - {fileID: 8300000, guid: de36f19976e097a42a88839dadab943c, type: 3}
   audioSource: {fileID: 6199637197864360258}
   audioHit: {fileID: 2922204582037014399}
   effect: 0
@@ -71780,7 +71780,7 @@ MonoBehaviour:
   attack: Special.U3
   damage: 6
   kb: 5
-  kbx: 0.025
+  kbx: 0.05
   kby: 0.05
   hitbox: 0.3
   Bdamage: 0.2
@@ -89664,9 +89664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clip:
   - {fileID: 8300000, guid: 60a354aa71f4efc488d7d54964ce5e97, type: 3}
-  clip2: []
   audioSource: {fileID: 7582895489612943757}
-  voice: []
 --- !u!251 &7582895489612943747
 PlatformEffector2D:
   m_ObjectHideFlags: 0

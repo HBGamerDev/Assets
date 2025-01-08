@@ -2793,15 +2793,22 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.125
-    functionName: Projectile
-    data: 
+  - time: 0.083333336
+    functionName: Voice
+    data: Special4
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.125
     functionName: NonAura
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.125
+    functionName: Projectile
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

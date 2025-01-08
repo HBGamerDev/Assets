@@ -2632,6 +2632,13 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.083333336
+    functionName: Voice
+    data: Light
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.083333336
     functionName: Hit
     data: Air.F1
     objectReferenceParameter: {fileID: 0}

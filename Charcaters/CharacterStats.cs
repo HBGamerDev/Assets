@@ -648,6 +648,7 @@ public class CharacterStats : MonoBehaviour
             hitbox.GetComponent<HitBox>().Attack();
             hitbox = null;
             anim.SetBool("grab", false);
+            //grab.transform.parent = null;
         }
     }
 
@@ -868,6 +869,7 @@ public class CharacterStats : MonoBehaviour
         color = new Color32(0xff, 0xff, 0xff, 0xff);
     }
 
+/*
     public void Copy(string attack)
     {
         foreach (HitBox box in hitboxes)
@@ -879,7 +881,9 @@ public class CharacterStats : MonoBehaviour
                 hitbox.GetComponent<HitBox>().Copy();
             }
     }
+*/
 
+/*
     public void Data(string attack)
     {
         foreach (HitBox box in hitboxes)
@@ -890,5 +894,5 @@ public class CharacterStats : MonoBehaviour
                 hitbox.GetComponent<HitBox>().Whiff();
                 hitbox.GetComponent<HitBox>().Data();
             }
-    }
+*/
 }

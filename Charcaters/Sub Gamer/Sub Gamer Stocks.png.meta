@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: b99d2cca8db80ce4c9e3fcdd56e0b2ce
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2566279721399743430
+    second: Sub Gamer Stocks_0
+  - first:
+      213: 4102135347307115171
+    second: Sub Gamer Stocks_1
+  - first:
+      213: 1175665649029320298
+    second: Sub Gamer Stocks_2
+  - first:
+      213: -7496266072278307986
+    second: Sub Gamer Stocks_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,10 +106,10 @@ TextureImporter:
       name: Sub Gamer Stocks_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 100
-        height: 100
+        x: 2
+        y: 12
+        width: 87
+        height: 79
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,10 +127,10 @@ TextureImporter:
       name: Sub Gamer Stocks_1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 0
-        width: 100
-        height: 100
+        x: 102
+        y: 12
+        width: 87
+        height: 79
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,10 +148,10 @@ TextureImporter:
       name: Sub Gamer Stocks_2
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 100
-        height: 100
+        x: 202
+        y: 12
+        width: 87
+        height: 79
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,10 +169,10 @@ TextureImporter:
       name: Sub Gamer Stocks_3
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0
-        width: 100
-        height: 100
+        x: 313
+        y: 12
+        width: 87
+        height: 79
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,27 +182,6 @@ TextureImporter:
       bones: []
       spriteID: e6be90469b9e7f790800000000000000
       internalID: -7496266072278307986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sub Gamer Stocks_4
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 0
-        width: 4
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c8a49ebc46938ee0800000000000000
-      internalID: -1259998214374512444
       vertices: []
       indices: 
       edges: []

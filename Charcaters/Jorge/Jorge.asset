@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43cf57712d286e6408a4406c45c2f8f8, type: 3}
+  m_Name: Jorge
+  m_EditorClassIdentifier: 
+  name: Jorge
+  render: {fileID: 21300000, guid: af6c52a6e87c77b40a7af57fb4b7ad58, type: 3}
+  rig: {fileID: 432326298186821322, guid: dd7435ca9ffb16744a4f68e2c83fdd86, type: 3}
+  alt: 0
+  selected: 0
+  stock: {fileID: -566795355471772935, guid: 53403e7d277e5d040b262ebad45709f9, type: 3}

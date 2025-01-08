@@ -4904,7 +4904,7 @@ MonoBehaviour:
   player: {fileID: 0}
   boxes: {fileID: 0}
   rb: {fileID: 0}
-  speedx: 600
+  speedx: 500
   speedy: 0
   time: 1
   pocket: {fileID: 0}

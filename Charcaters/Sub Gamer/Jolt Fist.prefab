@@ -488,8 +488,8 @@ MonoBehaviour:
   attack: 
   damage: 7
   kb: 4
-  kbx: 0.05
-  kby: 0.05
+  kbx: 0.01
+  kby: 0.01
   hitbox: 0.1
   Bdamage: 0.1
   Blag: 0.1

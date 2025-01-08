@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
 
     public Text gamemodeText;
     public List<string> modes;
-    public static int gamemode;
+    public static int gamemode = 1;
 
     public Text timeText;
     public float seconds;
@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        players = GetComponentsInChildren<PlayerData>();
+        players = transform.root.gameObject.GetComponentsInChildren<PlayerData>();
         cpu = cpuText.transform.GetComponentsInChildren<Text>();
 
         foreach (Text c in cpu)
@@ -529,7 +529,7 @@ public class GameManager : MonoBehaviour
 
         if (gamemode > modes.Count - 1)
         {
-            gamemode = modes.Count - 1;
+            gamemode = 0;
         }
     }
 
@@ -539,7 +539,7 @@ public class GameManager : MonoBehaviour
 
         if (gamemode < 0)
         {
-            gamemode = 0;
+            gamemode = modes.Count - 1;
         }
     }
 
@@ -607,14 +607,13 @@ public class GameManager : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
 
-        if (currentScene.name != "Menu" && currentScene.name != "Roster" && currentScene.name != "RuleSet")
+        if (currentScene.name != "Menu" && currentScene.name != "Roster" && currentScene.name != "RuleSet" || currentScene.name == "Tourney")
         {
             if (!paused)
             {
                 StartCoroutine(PauseTrigger());
                 pausedMenu.gameObject.SetActive(true);
                 Time.timeScale = 0;
-                camera.GetComponent<CameraController>().enabled = false;
                 return;
             }
             else
@@ -622,7 +621,6 @@ public class GameManager : MonoBehaviour
                 StartCoroutine(PauseTrigger());
                 pausedMenu.gameObject.SetActive(false);
                 Time.timeScale = 1;
-                camera.GetComponent<CameraController>().enabled = true;
                 return;
             }
         }

@@ -221,6 +221,11 @@ public class Player : MonoBehaviour
                 {
                     Destroy(gameObject);
                     stats.End();
+
+                    foreach (Player p in allPlayers)
+                    {
+                    allPlayers.Remove(p);
+                    }
                 }
             }
         }

@@ -32,4 +32,28 @@ public class Klon : MonoBehaviour
         }
 
     }
+
+        public void Copy(string attack)
+    {
+        foreach (HitBox box in stats.hitboxes)
+            if (attack == box.attack)
+            {
+                stats.hitbox = box;
+                stats.hitbox.enabled = true;
+                stats.hitbox.GetComponent<HitBox>().Whiff();
+                stats.hitbox.GetComponent<HitBox>().Copy();
+            }
+    }
+
+        public void Data(string attack)
+    {
+        foreach (HitBox box in stats.hitboxes)
+            if (attack == box.attack)
+            {
+                stats.hitbox = box;
+                stats.hitbox.enabled = true;
+                stats.hitbox.GetComponent<HitBox>().Whiff();
+                stats.hitbox.GetComponent<HitBox>().Data();
+            }
+    }
 }

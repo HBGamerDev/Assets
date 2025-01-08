@@ -4907,6 +4907,7 @@ MonoBehaviour:
   speedx: 300
   speedy: 0
   time: 3
+  pocket: {fileID: 0}
 --- !u!114 &2846962874753190304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4925,8 +4926,8 @@ MonoBehaviour:
   kbx: 0.05
   kby: 0.05
   hitbox: 0.2
-  Bdamage: 0.2
-  Blag: 0.2
+  Bdamage: 0.25
+  Blag: 0.25
   stats: {fileID: 0}
   angle: {x: 1, y: 1}
   hurtbox: {fileID: 0}
