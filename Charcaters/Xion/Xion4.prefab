@@ -10626,8 +10626,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   cpu: 0
-  walkspeed: 125
-  runspeed: 175
+  walkspeed: 121
+  runspeed: 169
   still: 0
   charge: 0
   burst: 1
@@ -11070,9 +11070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clip:
   - {fileID: 8300000, guid: 60a354aa71f4efc488d7d54964ce5e97, type: 3}
-  clip2: []
   audioSource: {fileID: 8790959611099547514}
-  voice: []
 --- !u!82 &8790959611099547514
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15105,7 +15103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Death
   clip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 7faf303ef8ae4dd449e4dab6a7eba186, type: 3}
   audioSource: {fileID: 5628996087749381087}
 --- !u!1 &7049760141322122293
 GameObject:
@@ -15935,7 +15933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Falling
   clip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 461d1986b6fe5b848be1d72149fc9147, type: 3}
   audioSource: {fileID: 5628996087749381087}
 --- !u!1 &7162026555614940215
 GameObject:

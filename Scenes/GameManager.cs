@@ -460,18 +460,21 @@ public class GameManager : MonoBehaviour
     {
         solo = true;
         trainingMenu.SetActive(true);
+        rules.SetActive(false);
     }
 
     public void Versus()
     {
         versus = true;
         battle.SetActive(true);
+        rules.SetActive(false);
     }
 
     public void Files()
     {
         files = true;
         vault.SetActive(true);
+        rules.SetActive(false);
     }
 
     public void Training()
@@ -516,6 +519,7 @@ public class GameManager : MonoBehaviour
         songlist = false;
         voices = false;
         SceneManager.LoadScene("Menu");
+        rules.SetActive(true);
     }
 
     public void Rules()

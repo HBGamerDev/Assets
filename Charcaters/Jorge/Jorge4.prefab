@@ -8181,7 +8181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Victory
   clip:
-  - {fileID: 8300000, guid: 1c70be9d6cb092e4ca8289fab340033c, type: 3}
+  - {fileID: 8300000, guid: 2f2797333059d384cae77b2a03458c84, type: 3}
   audioSource: {fileID: 3939865112577650221}
 --- !u!1 &4409553396823711826
 GameObject:
@@ -9016,7 +9016,7 @@ MonoBehaviour:
   kb: 2
   kbx: 0
   kby: 0.1
-  hitbox: 0.1
+  hitbox: 0.2
   Bdamage: 0.2
   Blag: 0.2
   stats: {fileID: 0}
@@ -13011,7 +13011,6 @@ GameObject:
   - component: {fileID: 6776741497568921036}
   - component: {fileID: 6776741497568921038}
   - component: {fileID: 6776741497568921037}
-  - component: {fileID: 6776741497568921039}
   m_Layer: 6
   m_Name: Head
   m_TagString: Untagged
@@ -13075,27 +13074,6 @@ MonoBehaviour:
   stats: {fileID: 0}
   anim: {fileID: 0}
   escape: 0
---- !u!50 &6776741497568921039
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6776741497568921027}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &6776741497583501580
 GameObject:
   m_ObjectHideFlags: 0
@@ -13403,7 +13381,7 @@ HingeJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 6776741497568921039}
+  m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
@@ -13453,7 +13431,7 @@ FixedJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 6776741497568921039}
+  m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
@@ -13980,7 +13958,7 @@ HingeJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 6776741497568921039}
+  m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
@@ -14030,7 +14008,7 @@ FixedJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 6776741497568921039}
+  m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1

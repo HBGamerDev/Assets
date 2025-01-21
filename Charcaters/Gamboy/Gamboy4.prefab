@@ -7124,9 +7124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clip:
   - {fileID: 8300000, guid: 4e8b8d00959b4674da4cbc15ce66f07a, type: 3}
-  clip2: []
   audioSource: {fileID: 6512680185926539337}
-  voice: []
 --- !u!251 &7478125497893457343
 PlatformEffector2D:
   m_ObjectHideFlags: 0

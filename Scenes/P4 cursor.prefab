@@ -215,6 +215,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 46cc4ebe-6abd-4c27-9a54-75d2707edf61
     m_ActionName: Cursor/Cancel[/Keyboard/o,/Nintendo Wireless Gamepad/button16,/SwitchProControllerHID/buttonSouth,/DualShock4GamepadHID/buttonEast]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 96303b7e-e414-4b53-966d-0eb373d767ef
+    m_ActionName: Player/Special[/Keyboard/o]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 52016ffe-62ea-4703-933a-29786bbf20ac
+    m_ActionName: Player/Block[/Keyboard/i]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9c880b2e-28fd-4b07-8141-e490a399efd1
+    m_ActionName: Player/Grab[/Keyboard/u]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5d248b2c-d694-43c7-9c67-242106dcad44
+    m_ActionName: Player/Taunt[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Cursor

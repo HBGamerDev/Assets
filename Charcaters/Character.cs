@@ -13,4 +13,6 @@ public class Character : ScriptableObject
     public bool alt;
     public bool selected;
     public Sprite stock;
+
+    public AudioClip clip;
 }

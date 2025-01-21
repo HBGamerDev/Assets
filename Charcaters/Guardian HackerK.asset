@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 
   render: {fileID: 21300000, guid: 5039294468f8b4b43804b9120fcc200f, type: 3}
-  rig: {fileID: 1215806695165771234, guid: 927bde52a7fb9b94eacd487692243ade, type: 3}
+  rig: {fileID: 220112092777329438, guid: f29c7bc5e5e9cae4589d9ab9584d52db, type: 3}
   alt: 1
   selected: 0
   stock: {fileID: 0}

@@ -13617,7 +13617,7 @@ Transform:
   m_GameObject: {fileID: 4413095183268495535}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 250.19379, y: 250.19379, z: 1.0007752}
   m_Children:
   - {fileID: 4413095183833076821}
   - {fileID: 3047777068180637724}
@@ -14290,9 +14290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clip:
   - {fileID: 8300000, guid: 4e8b8d00959b4674da4cbc15ce66f07a, type: 3}
-  clip2: []
   audioSource: {fileID: 7544695868856600633}
-  voice: []
 --- !u!251 &6130022997917261263
 PlatformEffector2D:
   m_ObjectHideFlags: 0

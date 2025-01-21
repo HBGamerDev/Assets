@@ -16,5 +16,6 @@ MonoBehaviour:
   render: {fileID: 21300000, guid: 5039294468f8b4b43804b9120fcc200f, type: 3}
   rig: {fileID: 2606946820663025212, guid: 6d05b052795b73546a13a45e6cdda6cd, type: 3}
   alt: 0
-  selected: 0
+  selected: 1
   stock: {fileID: 4600603581495786251, guid: 780fb2bf27b5a714bb3a65358dbd32da, type: 3}
+  clip: {fileID: 8300000, guid: 2e3b952799e3c9145a4336baf1d9929c, type: 3}

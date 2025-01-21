@@ -18,3 +18,4 @@ MonoBehaviour:
   alt: 0
   selected: 0
   stock: {fileID: 8672962064407310599, guid: 2fed3c654473cfe4da87e1fca35a8803, type: 3}
+  clip: {fileID: 8300000, guid: 5f3f554daf7323347889168759e4b3bb, type: 3}

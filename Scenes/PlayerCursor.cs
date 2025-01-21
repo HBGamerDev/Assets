@@ -88,61 +88,63 @@ public class PlayerCursor : MonoBehaviour
 
         if (context.started)
         {
+            if(GameManager.solo)
+            {
+                if(!GameManager.training)
+                {
+                    selecter.currentCharacter = selecter.roster.transform.GetChild(selecter.currentCharacter.GetSiblingIndex() + 1);
+                    index = selecter.currentCharacter.GetSiblingIndex();
+                    character = selecter.roster.characters[index];
+                    selecter.roster.ShowCharacterInSlot(player, character);
+                    selecter.p.AddCharacter(player, selecter.currentCharacter.GetSiblingIndex());
+                    return;
+                }
+            }
+
             if (selecter.roster.characters[index + 1].selected)
             {
                 if (selecter.roster.characters[index + 2].selected)
                 {
                     if (selecter.roster.characters[index + 3].selected)
                     {
-                        character.selected = false;
+                        selecter.p.RemoveCharacter(player, selecter.currentCharacter.GetSiblingIndex());
                         index = selecter.currentCharacter.GetSiblingIndex();
                         character = selecter.roster.characters[index];
                         selecter.roster.ShowCharacterInSlot(player, character);
-                        selecter.p.RemoveCharacter(player, selecter.currentCharacter.GetSiblingIndex());
                         selecter.p.AddCharacter(player, selecter.currentCharacter.GetSiblingIndex());
-                        character.selected = true;
                         return;
                     }
-                    character.selected = false;
+                    selecter.p.RemoveCharacter(player, selecter.currentCharacter.GetSiblingIndex());
                     selecter.currentCharacter = selecter.roster.transform.GetChild(selecter.currentCharacter.GetSiblingIndex() + 3);
                     index = selecter.currentCharacter.GetSiblingIndex();
                     character = selecter.roster.characters[index];
                     selecter.roster.ShowCharacterInSlot(player, character);
-                    selecter.p.RemoveCharacter(player, selecter.currentCharacter.GetSiblingIndex());
                     selecter.p.AddCharacter(player, selecter.currentCharacter.GetSiblingIndex());
-                    character.selected = true;
                     return;
                 }
-                character.selected = false;
+                selecter.p.RemoveCharacter(player, selecter.currentCharacter.GetSiblingIndex());
                 selecter.currentCharacter = selecter.roster.transform.GetChild(selecter.currentCharacter.GetSiblingIndex() + 2);
                 index = selecter.currentCharacter.GetSiblingIndex();
                 character = selecter.roster.characters[index];
                 selecter.roster.ShowCharacterInSlot(player, character);
-                selecter.p.RemoveCharacter(player, selecter.currentCharacter.GetSiblingIndex());
                 selecter.p.AddCharacter(player, selecter.currentCharacter.GetSiblingIndex());
-                character.selected = true;
                 return;
             }
-
-            character.selected = false;
+            selecter.p.RemoveCharacter(player, selecter.currentCharacter.GetSiblingIndex());
             selecter.currentCharacter = selecter.roster.transform.GetChild(selecter.currentCharacter.GetSiblingIndex() + 1);
             index = selecter.currentCharacter.GetSiblingIndex();
             character = selecter.roster.characters[index];
             selecter.roster.ShowCharacterInSlot(player, character);
-            selecter.p.RemoveCharacter(player, selecter.currentCharacter.GetSiblingIndex());
             selecter.p.AddCharacter(player, selecter.currentCharacter.GetSiblingIndex());
-            character.selected = true;
 
             if (selecter.roster.characters[index].alt == false)
             {
-                character.selected = false;
+                selecter.p.RemoveCharacter(player, selecter.currentCharacter.GetSiblingIndex());
                 selecter.currentCharacter = selecter.roster.transform.GetChild(selecter.currentCharacter.GetSiblingIndex() - 4);
                 index = selecter.currentCharacter.GetSiblingIndex();
                 character = selecter.roster.characters[index];
                 selecter.roster.ShowCharacterInSlot(player, character);
-                selecter.p.RemoveCharacter(player, selecter.currentCharacter.GetSiblingIndex());
                 selecter.p.AddCharacter(player, selecter.currentCharacter.GetSiblingIndex());
-                character.selected = true;
             }
 
             return;
@@ -167,5 +169,11 @@ public class PlayerCursor : MonoBehaviour
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, -worldSize.x, worldSize.x),
             Mathf.Clamp(transform.position.y, -worldSize.y, worldSize.y),
             transform.position.z);
+
+        if(Input.mousePosition.x > 0)
+        {
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = new Vector3(mousePosition.x, mousePosition.y, 0);
+        }
     }
 }

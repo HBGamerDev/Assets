@@ -18,6 +18,7 @@ public class Roster : MonoBehaviour
     public GameObject RuleSet;
     public AddPlayer add;
 
+    public AudioSource sound;
     public GameObject stage;
 
     void Start()
@@ -114,6 +115,7 @@ public class Roster : MonoBehaviour
     public void ConfirmCharacter(int player, Character character)
     {
         ready++;
+        sound.PlayOneShot(character.clip);
 
         if(ready == psc.childCount)
         {

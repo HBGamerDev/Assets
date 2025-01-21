@@ -94000,7 +94000,7 @@ MonoBehaviour:
   clip:
   - {fileID: 8300000, guid: f2ba0c4484cba1642b057885bcc45f46, type: 3}
   hit:
-  - {fileID: 8300000, guid: 1abf1d73199609d41bd713da13a9e207, type: 3}
+  - {fileID: 8300000, guid: ca16b5a8068d37543ba2b1ceb1f0e8ed, type: 3}
   audioSource: {fileID: 7401799892151508970}
   audioHit: {fileID: 2656537109896013091}
   effect: 0

@@ -33,7 +33,7 @@ public class Klon : MonoBehaviour
 
     }
 
-        public void Copy(string attack)
+    public void Copy(string attack)
     {
         foreach (HitBox box in stats.hitboxes)
             if (attack == box.attack)
@@ -45,7 +45,7 @@ public class Klon : MonoBehaviour
             }
     }
 
-        public void Data(string attack)
+    public void Data(string attack)
     {
         foreach (HitBox box in stats.hitboxes)
             if (attack == box.attack)

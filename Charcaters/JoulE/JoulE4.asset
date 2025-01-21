@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: JoulE
   render: {fileID: 21300000, guid: b1a99939b7caf2f46b40ec0f357bbda8, type: 3}
-  rig: {fileID: 7280807881508322143, guid: 2229bfc0b4362514187566ac354bd336, type: 3}
+  rig: {fileID: 7717892532829015357, guid: 2229bfc0b4362514187566ac354bd336, type: 3}
   alt: 1
   selected: 0
   stock: {fileID: 5899089858302025679, guid: eceab179f4aa6b84fa5c0c5cc37ace26, type: 3}
+  clip: {fileID: 8300000, guid: 5390b76c799fb9d46bbb0c7ca8ce2736, type: 3}

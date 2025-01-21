@@ -3837,9 +3837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clip:
   - {fileID: 8300000, guid: 60a354aa71f4efc488d7d54964ce5e97, type: 3}
-  clip2: []
   audioSource: {fileID: 6294176319538756112}
-  voice: []
 --- !u!251 &3875799903580906567
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -11365,6 +11363,7 @@ MonoBehaviour:
   type: Hit
   clip:
   - {fileID: 8300000, guid: 323089be4d49d6c49aa12e0bf574da4b, type: 3}
+  - {fileID: 8300000, guid: a657847aaf4e01a4c827d57ddf226134, type: 3}
   audioSource: {fileID: 386143889654926303}
 --- !u!1 &8877093800256347360
 GameObject:

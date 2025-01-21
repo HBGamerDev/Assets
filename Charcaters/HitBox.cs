@@ -303,6 +303,16 @@ public class HitBox : MonoBehaviour
                             }
                         }
                     }
+
+                    for(int i = 0; i < enemy.gameObject.GetComponent<HurtBox>().stats.hitboxes.Length; i++)
+                    {
+                        foreach(Voice clip in stats.voices)
+                        {
+                            if(clip.type == enemy.gameObject.GetComponent<HurtBox>().stats.voices[i].type)
+                                clip.clip = enemy.gameObject.GetComponent<HurtBox>().stats.voices[i].clip;
+                        }
+                        stats.voice.audioSource.pitch = 1.25f;
+                    }
                     return;
                 }
             }

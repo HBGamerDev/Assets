@@ -44037,8 +44037,8 @@ MonoBehaviour:
   - {fileID: 7828345102530277281}
   - {fileID: 7828345101465712265}
   m_Bounds:
-    m_Center: {x: 0.08778404, y: 0.03731993, z: 0}
-    m_Extent: {x: 0.2314455, y: 0.4195926, z: 0}
+    m_Center: {x: 0.14742969, y: 0.0019182563, z: 0}
+    m_Extent: {x: 0.31674823, y: 0.397133, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!95 &4634729134162338876
@@ -51443,7 +51443,7 @@ MonoBehaviour:
   clip:
   - {fileID: 8300000, guid: f2ba0c4484cba1642b057885bcc45f46, type: 3}
   hit:
-  - {fileID: 8300000, guid: 1abf1d73199609d41bd713da13a9e207, type: 3}
+  - {fileID: 8300000, guid: ca16b5a8068d37543ba2b1ceb1f0e8ed, type: 3}
   audioSource: {fileID: 4704508024655802587}
   audioHit: {fileID: 228653043545852434}
   effect: 0

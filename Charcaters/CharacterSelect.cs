@@ -54,7 +54,7 @@ public class CharacterSelect : MonoBehaviour
             selecter = FindObjectOfType<PlayerCursor>().transform;
         }
 
-        float distance = Vector3.Distance(selecter.position, transform.position);
+        float distance = Vector2.Distance(selecter.position, transform.position);
 
         //CONFIRM
         if (Input.GetButtonDown("Submit"))

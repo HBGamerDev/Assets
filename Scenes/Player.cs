@@ -57,14 +57,14 @@ public class Player : MonoBehaviour
 
         if (GameManager.gamemode == 1)
         {
-            score = GameManager.stocks;
+            if(!GameManager.clones)
+                score = GameManager.stocks;
         }
 
         foreach (int p in players)
         {
             if (players.IndexOf(p) == player - 1)
             {
-
                 foreach (Character c in characters)
                 {
                     if (characters.IndexOf(c) == p)
@@ -340,23 +340,35 @@ public class Player : MonoBehaviour
         players.Insert(player - 1, c);
         cpus.Insert(player - 1, cpu);
         diffy.Insert(player - 1, dif);
+        if(players.IndexOf(player) != null)
+        {
+            foreach(Player p in allPlayers)
+            {
+                players.Insert(p.player - 1, p.GetComponentInChildren<CharacterSelect>().currentCharacter.GetSiblingIndex());
+                cpus.Insert(p.player - 1, p.cpu);
+                diffy.Insert(p.player - 1, p.dif);
+            }
+        }
 
         if(GameManager.clones)
         {
             players.Insert(player, c + 1);
             cpus.Insert(player, true);
+            diffy.Insert(player, dif);
         }
     }
 
     public void RemoveCharacter(int player, int c)
     {
         players.RemoveAt(player - 1);
+        cpus.RemoveAt(player - 1);
         diffy.RemoveAt(player - 1);
 
         if (GameManager.clones)
         {
             players.RemoveAt(player);
             cpus.RemoveAt(player);
+            diffy.RemoveAt(player);
         }
     }
 

@@ -3461,6 +3461,7 @@ MonoBehaviour:
   type: Hit
   clip:
   - {fileID: 8300000, guid: 323089be4d49d6c49aa12e0bf574da4b, type: 3}
+  - {fileID: 8300000, guid: a657847aaf4e01a4c827d57ddf226134, type: 3}
   audioSource: {fileID: 4690459905852167086}
 --- !u!1 &4348237877410413399
 GameObject:
