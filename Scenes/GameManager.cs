@@ -235,38 +235,6 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if (hitboxes)
-        {
-            foreach (PlayerData p in players)
-            {
-                if (p.p.stats.still)
-                {
-                    p.p.stats.color = new Color32(0xff, 0, 0, 0xff);
-                }
-
-                if (p.p.stats.armor)
-                {
-                    p.p.stats.color = new Color32(0, 0xff, 0, 0xff);
-                }
-
-                if (p.p.stats.invincible)
-                {
-                    p.p.stats.color = new Color32(0, 0, 0xff, 0xff);
-                }
-
-                if (!p.p.stats.still && !p.p.stats.armor && !p.p.stats.invincible)
-                {
-                    p.p.stats.color = new Color32(0xff, 0xff, 0xff, 0xff);
-                }
-
-                foreach (HitBox b in p.p.stats.hitboxes)
-                {
-                    if(b.enabled)
-                    Instantiate(hit, b.transform);
-                }
-            }
-        }
-
         foreach (string cpu in states)
         {
             if(states.IndexOf(cpu) == currentState)

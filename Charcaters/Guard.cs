@@ -47,6 +47,16 @@ public class Guard : MonoBehaviour
     public void Hit(float damage, float lag)
     {
         health -= damage;
+        
+        if(health <= 0)
+        {
+            stats.anim.speed = 1;
+            transform.parent.GetComponent<CharacterStats>().anim.SetBool("crash", true);
+            enabled = false;
+            Block();
+            return;
+        }
+
         if(lag > 0)
         {
             stats.anim.Play("Blockstun");

@@ -18,7 +18,7 @@ public class PlayerData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        character = p.GetComponent<Player>().character;
+        character = p.character;
 
         Sprite render = character.render;
 
@@ -95,6 +95,38 @@ public class PlayerData : MonoBehaviour
             score = p.score;
             transform.Find("score").gameObject.SetActive(true);
             transform.Find("score").GetComponent<Text>().text = "" + score;
+        }
+
+        if(GameManager.training)
+        {
+            if (FindObjectOfType<GameManager>().hitboxes)
+            {
+                if (p.stats.still)
+                    {
+                     p.stats.color = new Color32(0xff, 0, 0, 0xff);
+                    }
+
+                    if (p.stats.armor)
+                    {
+                        p.stats.color = new Color32(0, 0xff, 0, 0xff);
+                    }
+
+                    if (p.stats.invincible)
+                    {
+                        p.stats.color = new Color32(0, 0, 0xff, 0xff);
+                    }
+
+                    if (!p.stats.still && !p.stats.armor && !p.stats.invincible)
+                    {
+                        p.stats.color = new Color32(0xff, 0xff, 0xff, 0xff);
+                    }
+
+                    foreach (HitBox b in p.stats.hitboxes)
+                    {
+                        if(b.enabled)
+                        Instantiate(FindObjectOfType<GameManager>().hit, b.transform);
+                    }
+            }
         }
     }
 }

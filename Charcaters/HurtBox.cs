@@ -39,10 +39,7 @@ public class HurtBox : MonoBehaviour
     {
         if (FindObjectOfType<ComboCounter>() != null)
         {
-            if (!stats.still)
-            {
-                FindObjectOfType<ComboCounter>().Reset();
-            }
+            StartCoroutine(Reset());
             FindObjectOfType<ComboCounter>().Hit(damage);
         }
 
@@ -151,10 +148,7 @@ public class HurtBox : MonoBehaviour
 
         if (FindObjectOfType<ComboCounter>() != null)
         {
-            if (!stats.still)
-            {
-                FindObjectOfType<ComboCounter>().Reset();
-            }
+            StartCoroutine(Reset());
             FindObjectOfType<ComboCounter>().Hit(damage);
         }
     }
@@ -167,6 +161,8 @@ public class HurtBox : MonoBehaviour
         anim.SetBool("Launch", false);
         anim.SetBool("Haunch", false);
         stats.transform.parent = stats.player.transform;
+
+        StartCoroutine(Reset());
     }
 
     public void Death()
@@ -186,5 +182,20 @@ public class HurtBox : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         anim.SetBool("death", false);
         anim.SetBool("fall", false);
+
+        StartCoroutine(Reset());
+    }
+
+    public IEnumerator Reset()
+    {
+        yield return new WaitForSeconds(0.1f);
+        if (!stats.still)
+        {
+            FindObjectOfType<ComboCounter>().Reset();
+        }
+        else
+        {
+            StartCoroutine(Reset());
+        }
     }
 }
