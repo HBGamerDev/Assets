@@ -6103,7 +6103,7 @@ AnimationClip:
   m_Events:
   - time: 0.083333336
     functionName: Hit
-    data: Heavy.F
+    data: Jab3
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

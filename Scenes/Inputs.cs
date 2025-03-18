@@ -483,6 +483,17 @@ public class @Inputs : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": """",
+                    ""id"": ""f0005abf-c52e-403e-a73e-ba530f7f146f"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Upick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
                     ""name"": ""Stick"",
                     ""id"": ""b72e8836-1d8f-4bfb-bbdd-16c58df93eaa"",
                     ""path"": ""1DAxis(whichSideWins=1)"",
@@ -514,6 +525,17 @@ public class @Inputs : IInputActionCollection, IDisposable
                     ""action"": ""Upick"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0a143a62-d503-4f16-9931-731172d69c70"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Flick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
@@ -679,6 +701,17 @@ public class @Inputs : IInputActionCollection, IDisposable
                     ""action"": ""Taunt"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b1d47b4b-a179-4364-b70b-578c3abd04e5"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dlick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -831,6 +864,61 @@ public class @Inputs : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": ""Joystick"",
+                    ""id"": ""edc5fb11-b170-40c8-a46f-754d5fbe7951"",
+                    ""path"": ""2DVector(mode=2)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Legacy"",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""59c1ca8d-33bc-4729-89fb-c69cca1450f7"",
+                    ""path"": ""<HID::Controller Adapter>/stick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Legacy"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""54121368-4ea7-4d7e-a076-bdd83d378d3a"",
+                    ""path"": ""<HID::Controller Adapter>/stick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Legacy"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""e4bec01b-44aa-46ab-8953-712841478288"",
+                    ""path"": ""<HID::Controller Adapter>/stick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Legacy"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""d167d7eb-b106-4da1-ae43-e7cbbb3f27aa"",
+                    ""path"": ""<HID::Controller Adapter>/stick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Legacy"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": ""Gamepad"",
                     ""id"": ""988d95e9-1360-4fcd-b237-fd728c818209"",
                     ""path"": ""2DVector(mode=2)"",
@@ -920,6 +1008,17 @@ public class @Inputs : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""e6745cb0-f988-4e40-8c0a-2f27be8fdb71"",
+                    ""path"": ""<HID::Controller Adapter>/button2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Legacy"",
+                    ""action"": ""Submit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""10f6b92b-91a3-4ab2-8323-2c8869cb18e5"",
                     ""path"": ""<SwitchProControllerHID>/buttonEast"",
                     ""interactions"": """",
@@ -975,6 +1074,17 @@ public class @Inputs : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""7e55855e-8f4e-48c0-9ae0-907a0164f554"",
+                    ""path"": ""<HID::Controller Adapter>/trigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Legacy"",
+                    ""action"": ""Skin"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""9ae1958e-e5ef-41e3-afe4-99c0bfe5fc4f"",
                     ""path"": ""<Gamepad>/buttonNorth"",
                     ""interactions"": """",
@@ -999,6 +1109,17 @@ public class @Inputs : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""745d26c5-202e-43a4-806d-405a737d21d1"",
                     ""path"": ""<HID::Nintendo Wireless Gamepad>/trigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Legacy"",
+                    ""action"": ""Cancel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""20c6dcaa-7739-4476-b15c-c8e68cceac26"",
+                    ""path"": ""<HID::Controller Adapter>/button3"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Legacy"",
@@ -1087,6 +1208,11 @@ public class @Inputs : IInputActionCollection, IDisposable
             ""devices"": [
                 {
                     ""devicePath"": ""<HID::Nintendo Wireless Gamepad>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<HID::Controller Adapter>"",
                     ""isOptional"": false,
                     ""isOR"": false
                 }

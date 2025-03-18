@@ -5396,6 +5396,13 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
+    functionName: StartLag
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0
     functionName: SteerX
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -5409,13 +5416,6 @@ AnimationClip:
     floatParameter: 5
     intParameter: 0
     messageOptions: 0
-  - time: 0
-    functionName: StartLag
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
   - time: 0.083333336
     functionName: Invincible
     data: 
@@ -5423,7 +5423,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.5
+  - time: 0.33333334
     functionName: Vulnerable
     data: 
     objectReferenceParameter: {fileID: 0}

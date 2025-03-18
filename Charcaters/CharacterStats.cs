@@ -48,6 +48,8 @@ public class CharacterStats : MonoBehaviour
     public CPU ai;
 
     public PlayerInput input;
+
+    private bool flick;
     Inputs inputs;
 
     void OnEnable()
@@ -94,11 +96,6 @@ public class CharacterStats : MonoBehaviour
             Player.allPlayers.Insert(player.player - 1, player);
 
             FindObjectOfType<InitializeLevel>().index++;
-
-            if (player.cpu)
-            {
-                Destroy(input);
-            }
         }
     }
 
@@ -121,6 +118,11 @@ public class CharacterStats : MonoBehaviour
                     if (rb.velocity.y < 0)
                         rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * -1);
                 }
+
+                if(hit.collider.isTrigger)
+                {
+                    hit.collider.isTrigger = false;
+                }
             }
         }
         return hit.collider != null;
@@ -140,7 +142,7 @@ public class CharacterStats : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         sprite.color = color;
 
@@ -246,7 +248,7 @@ public class CharacterStats : MonoBehaviour
             anim.SetFloat("Horizontal", directionalInput.x);
             anim.SetFloat("Vertical", directionalInput.y);
 
-            if (directionalInput.x >= 0.1f || directionalInput.x <= -0.1f)
+            if (directionalInput.x >= 0.5f || directionalInput.x <= -0.5f)
             {
                 StartCoroutine(Flick());
             }
@@ -259,6 +261,11 @@ public class CharacterStats : MonoBehaviour
             if (directionalInput.y <= -0.5f)
             {
                 StartCoroutine(Dlick());
+            }
+
+            if(directionalInput.x == 0f && directionalInput.y == 0f)
+            {
+                flick = false;
             }
 
             if (!still)
@@ -361,6 +368,11 @@ public class CharacterStats : MonoBehaviour
                 StartCoroutine(Dlick());
             }
 
+            if(directionalInput.x == 0f && directionalInput.y == 0f)
+            {
+                flick = false;
+            }
+
             if (!still)
             {
                 Vector2 movementInput = new Vector2(ai.movement, rb.velocity.y);
@@ -444,23 +456,35 @@ public class CharacterStats : MonoBehaviour
 
     public IEnumerator Flick()
     {
-        anim.SetBool("flick", true);
-        yield return new WaitForSeconds(0.15f);
-        anim.SetBool("flick", false);
+        if(!flick)
+        {
+            flick = true;
+            anim.SetBool("flick", true);
+            yield return new WaitForSeconds(0.15f);
+            anim.SetBool("flick", false);
+        }
     }
 
     public IEnumerator Upick()
     {
-        anim.SetBool("upick", true);
-        yield return new WaitForSeconds(0.15f);
-        anim.SetBool("upick", false);
+        if(!flick)
+        {
+            flick = true;
+            anim.SetBool("upick", true);
+            yield return new WaitForSeconds(0.15f);
+            anim.SetBool("upick", false);
+        }
     }
 
     public IEnumerator Dlick()
     {
-        anim.SetBool("dlick", true);
-        yield return new WaitForSeconds(0.15f);
-        anim.SetBool("dlick", false);
+        if(!flick)
+        {
+            flick = true;
+            anim.SetBool("dlick", true);
+            yield return new WaitForSeconds(0.15f);
+            anim.SetBool("dlick", false);
+        }
     }
 
     public void OnJump(InputAction.CallbackContext context)
@@ -581,6 +605,7 @@ public class CharacterStats : MonoBehaviour
         {
             if (context.performed)
             {
+                flick = false;
                 StartCoroutine(Flick());
                 anim.SetBool("Attack", true);
             }
@@ -598,6 +623,7 @@ public class CharacterStats : MonoBehaviour
         {
             if (context.performed)
             {
+                flick = false;
                 StartCoroutine(Upick());
                 anim.SetBool("Attack", true);
             }
@@ -615,6 +641,7 @@ public class CharacterStats : MonoBehaviour
         {
             if (context.performed)
             {
+                flick = false;
                 StartCoroutine(Dlick());
                 anim.SetBool("Attack", true);
             }
@@ -648,7 +675,12 @@ public class CharacterStats : MonoBehaviour
             hitbox.GetComponent<HitBox>().Attack();
             hitbox = null;
             anim.SetBool("grab", false);
-            //grab.transform.parent = null;
+            
+            foreach(Transform grabbed in grab)
+            {
+                grabbed.GetComponent<CharacterStats>().anim.SetBool("Hit", false);
+                grabbed.parent = grabbed.GetComponent<CharacterStats>().player.transform;
+            }
         }
     }
 

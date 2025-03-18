@@ -26,7 +26,7 @@ public class Projectile : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         time -= Time.deltaTime;
 
@@ -39,17 +39,10 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (transform.parent.localScale.x == -1)
-        {
-            Vector3 scale = transform.localScale;
+        rb.velocity = new Vector2(transform.parent.localScale.x == -1 ? -1 * speedx * Time.deltaTime : 
+                                                1 * speedx * Time.deltaTime, speedy * Time.deltaTime);
 
-            transform.localScale = new Vector3(scale.x * -1, scale.y * 1, scale.z * 1);
-            rb.velocity = new Vector2(-1 * speedx * Time.deltaTime, speedy * Time.deltaTime);
-        }
-        else
-        {
-            rb.velocity = new Vector2(speedx * Time.deltaTime, speedy * Time.deltaTime);
-        }
+
         StartCoroutine(Free());
     }
 

@@ -3154,7 +3154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack: Special.F2
-  damage: 5
+  damage: 10
   kb: 4
   kbx: 0.01
   kby: 0.01
@@ -7574,8 +7574,8 @@ MonoBehaviour:
   - {fileID: 7897259089717252726}
   - {fileID: 7897259089115591198}
   m_Bounds:
-    m_Center: {x: -0.01183176, y: 0.10745737, z: 0}
-    m_Extent: {x: 0.5016248, y: 0.41276497, z: 0}
+    m_Center: {x: -0.01183176, y: 0.10745755, z: 0}
+    m_Extent: {x: 0.5016248, y: 0.41276503, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &7897259088064942795
@@ -8365,8 +8365,8 @@ MonoBehaviour:
   - {fileID: 7897259088388215300}
   - {fileID: 7897259089612591018}
   m_Bounds:
-    m_Center: {x: -0.011830032, y: 0.10745719, z: 0}
-    m_Extent: {x: 0.5016248, y: 0.41276485, z: 0}
+    m_Center: {x: -0.011830032, y: 0.10745701, z: 0}
+    m_Extent: {x: 0.5016248, y: 0.4127649, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &7897259088543715047
@@ -9364,7 +9364,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &7897259089497668997
 BoxCollider2D:
   m_ObjectHideFlags: 0

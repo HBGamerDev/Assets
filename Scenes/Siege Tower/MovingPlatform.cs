@@ -5,6 +5,7 @@ using UnityEngine;
 public class MovingPlatform : MonoBehaviour
 {
     public float speed;
+    public Transform slot;
     public Transform start;
     public Transform end;
     public Transform empty;
@@ -30,11 +31,11 @@ public class MovingPlatform : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        other.transform.parent.SetParent(transform);
+        other.transform.SetParent(slot);
     }
 
     void OnCollisionExit2D(Collision2D other)
     {
-        other.transform.parent.SetParent(null);
+        other.transform.SetParent(other.transform.GetComponent<CharacterStats>().player.transform);
     }
 }

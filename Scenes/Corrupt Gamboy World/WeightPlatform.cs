@@ -6,6 +6,7 @@ public class WeightPlatform : MonoBehaviour
 {
     public float weight;
     public WeightPlatform balancer;
+    public Transform slot;
     public Vector3 start;
 
     // Start is called before the first frame update
@@ -15,9 +16,9 @@ public class WeightPlatform : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        transform.position += new Vector3(0, (-weight * 0.05f), 0);
+        transform.position += new Vector3(0, (-weight * 2 * Time.deltaTime), 0);
 
         if(weight == 0)
         {
@@ -27,14 +28,14 @@ public class WeightPlatform : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        other.transform.parent.SetParent(transform);
+        other.transform.SetParent(slot);
         weight += other.transform.GetComponent<CharacterStats>().rb.mass;
         balancer.weight = -weight;
     }
 
     void OnCollisionExit2D(Collision2D other)
     {
-        other.transform.parent.SetParent(null);
+        other.transform.SetParent(other.transform.GetComponent<CharacterStats>().player.transform);
         weight -= other.transform.GetComponent<CharacterStats>().rb.mass;
         balancer.weight = -weight;
     }

@@ -17,4 +17,32 @@ public class Edge : MonoBehaviour
     {
         collider.isTrigger = true;
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.GetComponent<CharacterStats>() && other.transform.position.y < collider.transform.position.y)
+        {
+            StartCoroutine(Ledge(other.gameObject.GetComponent<CharacterStats>()));
+            other.transform.parent = collider.transform;
+            other.transform.position = collider.transform.position;
+        }
+    }
+
+    public IEnumerator Ledge(CharacterStats stat)
+    {
+        stat.anim.SetBool("ledge", true);
+        stat.Invincible();
+        yield return new WaitForSeconds(0.1f);
+        stat.anim.SetBool("ledge", false);
+        yield return new WaitForSeconds(0.4f);
+        stat.Vulnerable();
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.gameObject.GetComponent<CharacterStats>())
+        {
+            other.transform.parent = other.gameObject.GetComponent<CharacterStats>().player.transform;
+        }
+    }
 }

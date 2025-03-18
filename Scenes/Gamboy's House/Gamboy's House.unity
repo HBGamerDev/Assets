@@ -1460,7 +1460,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500032479}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.63, y: 0.949, z: 0}
+  m_LocalPosition: {x: 2.5, y: 0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2023151738}
@@ -1479,7 +1479,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: -0.16289711, y: 0.12602043}
+  m_Offset: {x: 0.0091228485, y: -0.24908733}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1490,7 +1490,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3101082, y: 0.6165197}
+  m_Size: {x: 0.6809225, y: 1.4474752}
   m_EdgeRadius: 0
 --- !u!114 &500032482
 MonoBehaviour:
@@ -1520,7 +1520,7 @@ PlatformEffector2D:
   m_RotationalOffset: 90
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
-  m_SurfaceArc: 170
+  m_SurfaceArc: 150
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 0
@@ -3090,7 +3090,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525236213}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.288, y: 0.949, z: 0}
+  m_LocalPosition: {x: -2.5, y: 0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2023151738}
@@ -3109,7 +3109,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: -0.3243482, y: 0.15032446}
+  m_Offset: {x: -0.0028867722, y: -0.23387444}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3120,7 +3120,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.31010818, y: 0.6165197}
+  m_Size: {x: 0.59176445, y: 1.4830971}
   m_EdgeRadius: 0
 --- !u!114 &1525236216
 MonoBehaviour:
@@ -3150,7 +3150,7 @@ PlatformEffector2D:
   m_RotationalOffset: -90
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
-  m_SurfaceArc: 170
+  m_SurfaceArc: 150
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 0

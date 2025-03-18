@@ -14175,7 +14175,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &4112004205186269379
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14664,9 +14664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clip:
   - {fileID: 8300000, guid: 4e8b8d00959b4674da4cbc15ce66f07a, type: 3}
-  clip2: []
   audioSource: {fileID: 7825730385004759132}
-  voice: []
 --- !u!251 &5853702917267905962
 PlatformEffector2D:
   m_ObjectHideFlags: 0

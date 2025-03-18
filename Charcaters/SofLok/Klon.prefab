@@ -756,7 +756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack: Special.F2
-  damage: 5
+  damage: 10
   kb: 4
   kbx: 0.01
   kby: 0.01
@@ -8029,7 +8029,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &6244644741225365683
 BoxCollider2D:
   m_ObjectHideFlags: 0

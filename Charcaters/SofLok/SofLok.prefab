@@ -709,7 +709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack: Special.F2
-  damage: 5
+  damage: 10
   kb: 4
   kbx: 0.01
   kby: 0.01
@@ -6076,7 +6076,7 @@ MonoBehaviour:
   - {fileID: 6244644740740296512}
   - {fileID: 6244644740272344872}
   m_Bounds:
-    m_Center: {x: -0.01183176, y: 0.10745737, z: 0}
+    m_Center: {x: -0.011831999, y: 0.10745755, z: 0}
     m_Extent: {x: 0.5016248, y: 0.41276497, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -6219,7 +6219,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.17435248, y: 0.16914009}
+  m_ConnectedAnchor: {x: 0.11566747, y: 0.059378155}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -6269,7 +6269,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.17435248, y: 0.16914009}
+  m_ConnectedAnchor: {x: 0.11566747, y: 0.059378155}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!1 &6244644739314625668
@@ -7002,7 +7002,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.2725002, y: 0.16197418}
+  m_ConnectedAnchor: {x: 0.21133877, y: 0.08242853}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -7052,7 +7052,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.2725002, y: 0.16197418}
+  m_ConnectedAnchor: {x: 0.21133877, y: 0.08242853}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!1 &6244644740088231710
@@ -7157,8 +7157,8 @@ MonoBehaviour:
   - {fileID: 6244644739981684530}
   - {fileID: 6244644741171983004}
   m_Bounds:
-    m_Center: {x: -0.011830032, y: 0.10745719, z: 0}
-    m_Extent: {x: 0.5016248, y: 0.41276485, z: 0}
+    m_Center: {x: -0.011831284, y: 0.10745731, z: 0}
+    m_Extent: {x: 0.5016249, y: 0.41276482, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &6244644740103140305
@@ -8281,8 +8281,8 @@ MonoBehaviour:
   - {fileID: 6244644739993770819}
   - {fileID: 6244644740406155308}
   m_Bounds:
-    m_Center: {x: -0.004513547, y: 0.084962726, z: -0.5}
-    m_Extent: {x: 0.21853499, y: 0.5781418, z: 0.5}
+    m_Center: {x: 0.1460186, y: 0.07826877, z: -0.5}
+    m_Extent: {x: 0.265723, y: 0.5593758, z: 0.5}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!50 &6244644741225365680
@@ -8305,7 +8305,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &6244644741225365683
 BoxCollider2D:
   m_ObjectHideFlags: 0

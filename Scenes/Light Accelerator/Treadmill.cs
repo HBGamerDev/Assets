@@ -15,11 +15,11 @@ public class Treadmill : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        other.transform.parent.SetParent(empty);
+        other.transform.SetParent(empty);
     }
 
     void OnCollisionExit2D(Collision2D other)
     {
-        other.transform.parent.SetParent(null);
+        other.transform.SetParent(other.transform.GetComponent<CharacterStats>().player.transform);
     }
 }

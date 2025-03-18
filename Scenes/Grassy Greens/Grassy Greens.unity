@@ -3340,7 +3340,7 @@ GameObject:
   - component: {fileID: 2085016611}
   - component: {fileID: 2085016610}
   m_Layer: 3
-  m_Name: Platform (2)
+  m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

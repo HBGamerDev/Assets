@@ -179,7 +179,7 @@ public class HurtBox : MonoBehaviour
 
     public IEnumerator Dead()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.02f);
         anim.SetBool("death", false);
         anim.SetBool("fall", false);
 
